@@ -1,1 +1,1 @@
-Everything related to CyberDefender CTF challenges will be posted here.
+Everything related to CyberDefenders CTF challenges will be posted here.
