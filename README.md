@@ -1,4 +1,4 @@
-**Everything related to CyberDefenders CTF challenges will be posted here.**
+**My completed CyberDefenders CTF challenges are posted here.**
 
 https://cyberdefenders.org/p/0xLightning#/overview
 
