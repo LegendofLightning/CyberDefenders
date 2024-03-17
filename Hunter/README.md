@@ -56,6 +56,82 @@ Path: SOFTWARE\Microsoft\Windows NT\CurrentVersion
 
 Flag 5: `Windows 8.1`
 
+## 6. What was the computer timezone?
+
+Path: SYSTEM\ControlSet001\Control\TimeZoneInformation
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/2a2bd44f-dd2a-4f1b-baed-00bd902965d6)
+
+Flag 6: `UTC-07:00 (Daylight saving time)`
+
+## 7. How many times did this user log on to the computer?
+
+Use Regripper and load SAM hive
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/d9fb2b31-95df-44e9-8be5-e9b5ab5da77d)
+
+Flag 7: `3`
+
+## 8. When was the last login time for the discovered account? Format: one-space between date and time
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/37329ad3-50d8-42c6-962b-fe679bd5f570)
+
+Flag 8: `2016-06-21 01:42:40`
+
+## 9. There was a “Network Scanner” running on this computer, what was it? And when was the last time the suspect used it? Format: program.exe, YYYY-MM-DD HH:MM:SS UTC
+
+Use FTK Imager
+
+Path: User/Windows/Prefetch 
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/3d2b9935-a41a-47cc-b532-97fb9f34cea5)
+
+Parse it with PECmd.exe 
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/3b3b32a0-07d9-4924-8edb-8d0901ea80a1)
+
+Open it with Timeline Explorer
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/dbb1234c-82cf-46d0-8fe9-0390c46973a8)
+
+Flag 9: `zenmap.exe,2016-06-21 12:08:13 UTC`
+
+## 10. When did the port scan end? (Example: Sat Jan 23 hh:mm:ss 2016)
+
+Path: Users/Hunter/.zenmap/recent_scans.txt 
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/b7a34af8-3007-4ced-80f3-5ba5196078e2)
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/f6f1234e-bd2b-4065-8337-f737eb7cc3e0)
+
+Flag 10: `Tue Jun 21 05:12:09 2016`
+
+## 11. How many ports were scanned?
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/1535eece-7149-4133-8774-47d500d802fa)
+
+Flag 11: `1000`
+
+## 12.  What ports were found "open"?(comma-separated, ascending)
+
+![image](https://github.com/LegendofLightning/CyberDefenders/assets/66300601/c72e0284-b3b8-4054-9025-cbd9370a352b)
+
+Flag 12: `22, 80, 9929, 31337`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
