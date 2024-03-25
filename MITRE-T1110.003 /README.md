@@ -1,5 +1,7 @@
 # MITRE-T1110.003
 
+I used Event Log Explorer for this challenge.
+
 ## 1. Who was the last logged-in user?
 
 The first thing that came to my mind was to open the security log using Event Log Explorer and filter in event ID 4624. Here you can see all the login sessions created. 
